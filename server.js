@@ -20,6 +20,6 @@ const bankUserSchema = new mongoose.Schema({});
 const getConnection = async (dbName) => { 
     console.log('getConnection called with dbName');
     
-    if (connections 
+    if (!connections[dbName] = await mongoose.create
 }
 
