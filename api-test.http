@@ -1,0 +1,23 @@
+@database = BigBoxStore
+@collection = GroceryInventory
+@domain = http://localhost
+@port = 3000
+###
+GET {{domain}}:{{port}}/find/{{database}}/{{collection}}
+Content-Type: application/json
+
+###
+POST {{domain}}:{{port}}/insert/{{database}}/{{collection}}
+Content-Type: application/json
+
+{
+  "document": {
+    "name": "Jane",
+    "age": 30
+  }
+}
+
+###
+@id = 672189198b014f93b77159c5
+DELETE {{domain}}:{{port}}/delete/{{database}}/{{collection}}/{{id}}
+Content-Type: application/json
